@@ -334,26 +334,26 @@
 
 .nav__options > div {
   display: inline-block;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   /* border: 1px solid red; */
-  min-width: 135px;
+  /* min-width: 135px; */
   text-align: center;
 }
 
 .nav__options > div a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 3px;
-  transition: font-weight .1s ease-in-out;
+  transition: font-weight 3s ease-in-out;
 }
 
 .nav__options > div a::after {
   display: block;
   font-weight: 600;
-  content: attr(title);
+  /* content: attr(title); */
   height: 0;
   overflow: hidden;
   visibility: hidden;
@@ -361,10 +361,12 @@
 
 .nav__options > div a:hover {
   /* font-weight: 700; */
+  color: white;
+  /* text-decoration: underline; */
 }
 
 .nav__options > div:not(:first-child) {
-  margin-left: 28px;
+  margin-left: 55px;
 }
 
 /* nav ul {
