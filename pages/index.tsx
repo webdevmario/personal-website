@@ -40,9 +40,6 @@ const Home: NextPage = () => {
         <nav className={styles.nav}>
           <div className={styles['nav__options']}>
             <div>
-              <a href="#" title="Home">Home</a>
-            </div>
-            <div>
               <a href="#about-me" title="About Me">About Me</a>
             </div>
             <div>
@@ -52,7 +49,7 @@ const Home: NextPage = () => {
               <a href="#projects" title="Projects">Projects</a>
             </div>
             <div>
-              <a href="#contact-me" title="Contact Me">Contact</a>
+              <a href="#contact-me" title="Music">Music</a>
             </div>
           </div>
         </nav>
