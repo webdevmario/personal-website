@@ -297,3 +297,78 @@
 /* .about-me.dark .divider {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 } */
+
+.social-icons {
+  color: white;
+
+  position: absolute;
+  bottom: 30px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons > div {
+  display: inline-block;
+  margin: 0 14px;
+}
+
+/* navigation */
+
+.nav {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 22px;
+  z-index: 2;
+}
+
+.nav__options > div {
+  display: inline-block;
+}
+
+.nav__options > div a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3px;
+  transition: font-weight .1s ease-in-out;
+}
+
+.nav__options > div a::after {
+  display: block;
+  font-weight: 600;
+  content: attr(title);
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav__options > div a:hover {
+  font-weight: 700;
+}
+
+.nav__options > div:not(:first-child) {
+  margin-left: 28px;
+}
+
+/* nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  font-weight: 600;
+} */

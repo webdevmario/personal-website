@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css'
 
 import { useEffect, useState } from 'react'
 
+import { FaGithub, FaTwitter, FaLinkedin, FaLink, FaLinkedinIn } from 'react-icons/fa';
+
 const Home: NextPage = () => {
   const [descriptors, setDescriptors] = useState([
     'Web Developer',
@@ -35,6 +37,25 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main} style={{ backgroundColor: "black" }}>
+        <nav className={styles.nav}>
+          <div className={styles['nav__options']}>
+            <div>
+              <a href="#" title="Home">Home</a>
+            </div>
+            <div>
+              <a href="#about-me" title="About Me">About Me</a>
+            </div>
+            <div>
+              <a href="#experience" title="Experience">Experience</a>
+            </div>
+            <div>
+              <a href="#projects" title="Projects">Projects</a>
+            </div>
+            <div>
+              <a href="#contact-me" title="Contact Me">Contact Me</a>
+            </div>
+          </div>
+        </nav>
         <Image src="/background.jpg" alt="Mario Portillo - Background" layout="fill" style={{
           opacity: "0.2",
           backgroundColor: 'black',
@@ -45,6 +66,17 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.subtitle}>
             { activeDescriptor }
+          </div>
+        </div>
+        <div className={styles['social-icons']}>
+          <div>
+            <a href=""><FaGithub size="2em" /></a>
+          </div>
+          <div>
+            <a href=""><FaTwitter size="2em" /></a>
+          </div>
+          <div>
+            <a href=""><FaLinkedinIn size="2em" /></a>
           </div>
         </div>
       </main>
