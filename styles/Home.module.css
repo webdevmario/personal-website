@@ -164,6 +164,8 @@
 } */
 
 .subtitle {
+  color: white;
+
   font-weight: 300;
   text-transform: uppercase;
   font-size: 16px;
@@ -227,3 +229,71 @@
   28% { top: -25px; }
   55% { top: -55px; }
 }
+
+/* about me, section styles */
+
+.signature {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  margin: 80px 0 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.section-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 8px;
+}
+
+.about-me.white {
+  background-color: #fff;
+}
+
+.about-me.white h2 {
+  color: #333;
+}
+
+.about-me.dark {
+  background-color: #333;
+}
+
+.about-me.dark h2 {
+  color: #fff;
+}
+
+.about-me.white .content {
+  color: #333;
+}
+
+.about-me.dark .content {
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+}
+
+.about-me .content-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 850px;
+}
+
+.divider {
+  width: 300px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* .about-me.dark .divider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+} */

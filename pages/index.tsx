@@ -3,7 +3,29 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import { useEffect, useState } from 'react'
+
 const Home: NextPage = () => {
+  const [descriptors, setDescriptors] = useState([
+    'Web Developer',
+    'Designer',
+    'Project Manager'
+  ]);
+  const [activeDescriptor, setActiveDescriptor] = useState(descriptors[0]);
+
+  function updateDescriptor () {
+    setTimeout(() => {
+      let nextIdx = descriptors.findIndex((descriptor) => descriptor === activeDescriptor) + 1;
+      const nextDescriptor = (nextIdx < descriptors.length) ? descriptors[nextIdx] : descriptors[0];
+
+      setActiveDescriptor(nextDescriptor);
+    }, 6000);
+  }
+
+  useEffect(() => {
+    updateDescriptor();
+  }, [activeDescriptor]);
+
   return (
     <div className={styles.container} style={{ backgroundColor: 'black' }}>
       <Head>
@@ -17,23 +39,23 @@ const Home: NextPage = () => {
           opacity: "0.2",
           backgroundColor: 'black',
           filter: "blur(0.5px)" }} />
-        <div className={styles.coverText}>
+        <div className={styles.coverText} style={{ textAlign: 'center' }}>
           <div className={styles.title}>
             Mario Portillo
           </div>
           <div className={styles.subtitle}>
-            {/* { activeDescriptor } */}
+            { activeDescriptor }
           </div>
         </div>
       </main>
 
-      <section id="about-me" className="about-me white" style={{ width: '100vw', backgroundColor: 'white' }}>
-        <div className="section-content">
-          <h2>About Me</h2>
-          <div className="divider"></div>
-          <div className="content">
+      <section id="about-me" className={styles.about} style={{ width: '100vw', backgroundColor: 'white' }}>
+        <div className={styles['section-content']}>
+          <h2 className={styles['section-title']}>About Me</h2>
+          <div className={styles.divider}></div>
+          <div className={styles.content}>
             My name is Mario Portillo and I have been working as a professional web developer for the past 9 years. I have experience with a wide range of technologies but enjoy JavaScript the most. When I'm not coding, I enjoy spending time with my family and playing Magic the Gathering or reading a book.
-            <div className="signature">
+            <div className={styles.signature}>
               Mario Portillo
             </div>
           </div>
