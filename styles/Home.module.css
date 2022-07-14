@@ -300,7 +300,6 @@
 
 .social-icons {
   color: white;
-
   position: absolute;
   bottom: 30px;
   padding: 20px;
@@ -315,7 +314,7 @@
 
 .social-icons > div {
   display: inline-block;
-  margin: 0 14px;
+  margin: 0 25px;
 }
 
 /* navigation */
@@ -327,7 +326,7 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   padding: 22px;
   z-index: 2;
@@ -335,6 +334,10 @@
 
 .nav__options > div {
   display: inline-block;
+  margin: 0 10px;
+  /* border: 1px solid red; */
+  min-width: 135px;
+  text-align: center;
 }
 
 .nav__options > div a {
@@ -357,7 +360,7 @@
 }
 
 .nav__options > div a:hover {
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .nav__options > div:not(:first-child) {

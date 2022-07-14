@@ -52,7 +52,7 @@ const Home: NextPage = () => {
               <a href="#projects" title="Projects">Projects</a>
             </div>
             <div>
-              <a href="#contact-me" title="Contact Me">Contact Me</a>
+              <a href="#contact-me" title="Contact Me">Contact</a>
             </div>
           </div>
         </nav>
