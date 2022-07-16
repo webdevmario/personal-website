@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react'
 
 import { FaGithub, FaTwitter, FaLinkedin, FaLink, FaLinkedinIn } from 'react-icons/fa';
 
+import Job from './components/Job'
+
 const Home: NextPage = () => {
   const [descriptors, setDescriptors] = useState([
     'Web Developer',
@@ -86,6 +88,26 @@ const Home: NextPage = () => {
             My name is Mario Portillo and I have been working as a professional web developer for the past 9 years. I have experience with a wide range of technologies but enjoy JavaScript the most. When I'm not coding, I enjoy spending time with my family and playing Magic the Gathering or reading a book.
             <div className={styles.signature}>
               Mario Portillo
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" className="dark">
+        <div className="section-content">
+          <h2>Experience</h2>
+          <div className="divider"></div>
+          <div className="content">
+            <div className="job-wrapper">
+              <Job company="Corrections Software Solutions" time="Aug 2018 - Present" title="Software Engineer" />
+              <div className="job-divider"></div>
+              <Job company="Junior.Golf" time="Mar 2015 - Aug 2018" title="Lead Front-End Web Developer, Project Manager, Product Designer" />
+              <div className="job-divider"></div>
+              <Job company="Clarity Ventures" time="Jun 2014 - Mar 2015" title="Back-End Web Developer" />
+              <div className="job-divider"></div>
+              <Job company="OroSolutions" time="Jun 2009 - Jun 2014" title="Development Team Manager, Web Developer" />
+              <div className="job-divider"></div>
+              <Job company="IBM" time="Jun 2007 - Dec 2008" title="Pre-Professional Programmer" />
             </div>
           </div>
         </div>
